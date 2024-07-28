@@ -1,0 +1,7 @@
+kafka:
+  broker: ??? # broker host and port
+  topic: webhook
+  consumer:
+      boostrap.servers: .broker
+      group.id: up
+      auto.offset.reset: earliest

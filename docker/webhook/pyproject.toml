@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "finance-infra"
+version = "0.1.0"
+description = ""
+authors = ["Noel Borneo <born.angelonoel@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+boto3 = "^1.34.149"
+confluent-kafka = "^2.5.0"
+omegaconf = "^2.3.0"
+loguru = "^0.7.2"
+uvicorn = "^0.30.3"
+fastapi-slim = "^0.111.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+pytest = "^8.3.2"
+tox = "^4.16.0"
+moto = "^5.0.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
